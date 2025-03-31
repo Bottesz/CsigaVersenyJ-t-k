@@ -11,6 +11,8 @@ public class Csiga {
         private String ikon;
         private int sebesseg;
         private boolean kapgyorsitot;
+        
+        
     public Csiga(String szin,String szkod,String ikon,int sebesseg,boolean kapgyorsitot){
         this.szin = szin;
         this.szkod = szkod;
@@ -19,7 +21,7 @@ public class Csiga {
         this.kapgyorsitot = false;
     }
     
-    public int Megy(){
+    public int Gyorsito(){
         if (RND.nextDouble()<0.2) {
             kapgyorsitot = true;
             sebesseg += 1;
